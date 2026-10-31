@@ -106,8 +106,10 @@ if (ua.includes("Locket")) {
             telephoto: true,
             srgb: true,
             lanczos: true,
-            quality_mbps: 1.0,
-            qualityMbps: 1.0
+            quality_mbps: 8.0,
+            qualityMbps: 8.0,
+            record_audio: true,
+            audio_enabled: true
         }),
         camera_roll: JSON.stringify({
             gold_max_duration: 60.0,
@@ -119,9 +121,10 @@ if (ua.includes("Locket")) {
             trim_max_duration: 60.0,
             trimMaxDuration: 60.0,
             camera_roll_max_duration: 60.0,
-            quality_mbps: 1.0,
-            qualityMbps: 1.0,
-            flash_button: true
+            quality_mbps: 8.0,
+            qualityMbps: 8.0,
+            flash_button: true,
+            audio_enabled: true
         }),
         live_photos: JSON.stringify({
             capture: true,
@@ -166,19 +169,18 @@ if (ua.includes("Locket")) {
         trim_max_duration: "60.0",
         gold_max_duration: "60.0",
         goldMaxDuration: "60.0",
-        video_quality_mbps: "1.0",
+        video_quality_mbps: "8.0",
         video_sound_enabled: "true",
         microphone_enabled: "true",
         camera_microphone_enabled: "true",
-        audio_session_deactivation_enabled: "true",
+        audio_session_deactivation_enabled: "false",
         zoom_enabled: "true",
-        upload_main: "false",
-        upload_main_image_quality: "1.0",
-        upload_main_image_size: "1020",
-        upload_thumbnail_image_quality: "1.0",
-        upload_thumbnail_image_size: "1440"
+        upload_main: "true",
+        upload_main_image_quality: "0.8",
+        upload_main_image_size: "1080",
+        upload_thumbnail_image_quality: "0.8",
+        upload_thumbnail_image_size: "360"
     });
-
     // ============================================================
     // 4. BẠN BÈ, GIỚI HẠN & ĐỀ XUẤT KẾT BẠN
     // ============================================================
