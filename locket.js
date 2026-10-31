@@ -106,8 +106,8 @@ if (ua.includes("Locket")) {
             telephoto: true,
             srgb: true,
             lanczos: true,
-            quality_mbps: 8.0,
-            qualityMbps: 8.0,
+            quality_mbps: 4.5,
+            qualityMbps: 4.5,
             record_audio: true,
             audio_enabled: true
         }),
@@ -121,8 +121,8 @@ if (ua.includes("Locket")) {
             trim_max_duration: 60.0,
             trimMaxDuration: 60.0,
             camera_roll_max_duration: 60.0,
-            quality_mbps: 8.0,
-            qualityMbps: 8.0,
+            quality_mbps: 5.0,
+            qualityMbps: 5.0,
             flash_button: true,
             audio_enabled: true
         }),
@@ -169,7 +169,7 @@ if (ua.includes("Locket")) {
         trim_max_duration: "60.0",
         gold_max_duration: "60.0",
         goldMaxDuration: "60.0",
-        video_quality_mbps: "8.0",
+        video_quality_mbps: "4.5",
         video_sound_enabled: "true",
         microphone_enabled: "true",
         camera_microphone_enabled: "true",
@@ -178,7 +178,7 @@ if (ua.includes("Locket")) {
         upload_main: "true",
         upload_main_image_quality: "0.8",
         upload_main_image_size: "1080",
-        upload_thumbnail_image_quality: "0.8",
+        upload_thumbnail_image_quality: "0.7",
         upload_thumbnail_image_size: "360"
     });
     // ============================================================
