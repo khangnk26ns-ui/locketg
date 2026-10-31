@@ -48,7 +48,7 @@ if (ua.includes("Locket")) {
             tag: "LOCKET GOLD ",
             tag_gradient: true,
             tag_style: "gold_gradient",
-            title: "LÊN GOLD VIP RỒI CỐT  💛",
+            title: "LÊN GOLD VIP RỒI CỐT 💛",
             feature_set: [
                 {
                     title: "kaka co dep trai khong 🗿",
@@ -64,8 +64,7 @@ if (ua.includes("Locket")) {
         }),
         android_subscribe_gold_button_enabled: "false",
         profile_badge_visible: "true",
-        lunar_new_year_app_icon_enabled: "true",
-        
+        lunar_new_year_app_icon_enabled: "true"
     });
 
     // ============================================================
@@ -106,8 +105,8 @@ if (ua.includes("Locket")) {
             telephoto: true,
             srgb: true,
             lanczos: true,
-            quality_mbps: 8.0,
-            qualityMbps: 8.0,
+            quality_mbps: 4.5,
+            qualityMbps: 4.5,
             record_audio: true,
             audio_enabled: true
         }),
@@ -121,8 +120,8 @@ if (ua.includes("Locket")) {
             trim_max_duration: 60.0,
             trimMaxDuration: 60.0,
             camera_roll_max_duration: 60.0,
-            quality_mbps: 8.0,
-            qualityMbps: 8.0,
+            quality_mbps: 4.5,
+            qualityMbps: 4.5,
             flash_button: true,
             audio_enabled: true
         }),
@@ -169,7 +168,7 @@ if (ua.includes("Locket")) {
         trim_max_duration: "60.0",
         gold_max_duration: "60.0",
         goldMaxDuration: "60.0",
-        video_quality_mbps: "8.0",
+        video_quality_mbps: "4.5",
         video_sound_enabled: "true",
         microphone_enabled: "true",
         camera_microphone_enabled: "true",
@@ -181,6 +180,7 @@ if (ua.includes("Locket")) {
         upload_thumbnail_image_quality: "0.8",
         upload_thumbnail_image_size: "360"
     });
+
     // ============================================================
     // 4. BẠN BÈ, GIỚI HẠN & ĐỀ XUẤT KẾT BẠN
     // ============================================================
@@ -376,9 +376,38 @@ if (ua.includes("Locket")) {
             "standard", "poll", "color_palette", "review", "music", "location",
             "weather", "time", "streak", "star_sign", "party_time", "locket_count",
             "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026", "namgioi_19_11",
-            "cert_cutii", "cert_xinhgai", "cert_depchai", "cert_dangiu", "cert_xm_gaidep", 
-            "cert_xm_traidep", "cert_bengoan", "cert_tuyenduong_cute", "cert_ngau_loi", 
-            "cert_gioi_giang", "cert_10_diem", "cert_cuc_pham", "cert_ngoan_xinh_yeu", "cert_visual_dinh"
+            "kaka", "cu", "tuat", "snake_vibes", "du_an_ma", "toi_nho_em", "em_nho_anhh", "nho_anh_phien", "i_love_you",
+            "yeu_cuc_dang", "yeu_emmm", "yeu_anhhh", "baby_love", "muon_duoc_om", "cho_hun_mieng", "me_anh_me_ngu",
+            "be_be_can_do", "iu_thi_noi", "iu_hong_thi_bao", "anh_thuong_em", "yeu_em_nhiem_vu", "crush_nhin", "ngoai_le_cua_em",
+            "dang_ban_tuong_tu", "mac_bay_tinh_yeu", "minh_cuoi_nhau", "wedding_time", "dating_time", "cam_thay_hanh_phuc",
+            "feeling_cute", "cutie_pie", "hello_kitty", "ngoan_xinh_iu", "xinh_dep_tuyet_voi", "hom_nay_slay", "tinh_hoa_hoi_tu",
+            "xinh_gai_an_phim_1", "xinh_la_tai_nang", "dep_trai_co_gi_sai", "dep_khong_ly_do", "cha_nay_tu_luyen_ghe",
+            "phu_tinh_khong_phu_ban", "main_character", "vibe_khong_phai_ai", "khi_chat", "sieu_cap_ba_khi", "ba_khi",
+            "du_ba_khi_chua", "oach_xa_lach", "cung_cung_di", "ra_duong_ne_moi_anh", "nhin_la_biet_uy_tin", "flex_den_hoi_tho_cuoi",
+            "hon_hom_qua", "khong_phai_gu", "quan_trong_lam", "cai_net_ky", "ghet_dua_kia_ghe", "khong_ghet_khong_ua",
+            "che_manh", "chua_du_wow", "roi_let_luon", "roi_gay_luon", "cuoi_vcl_m_oi", "cuoi_xiu", "luon_vui_tuoi",
+            "con_vien_la_lan", "gian_dang_iu_hong", "nau_xoi", "am_cha_hui", "hong_drama", "ke_chuyen_nghe_choi",
+            "drama_ai_hong", "check_var", "co_bien_co_bien", "so_ho_la_bao", "bot_bao", "ai_so_thi_di_ve", "chay_ngay_di",
+            "len_chua_khong_biet_lay_ai", "dam_nhau_khong", "hao_han", "mong_ton_hoa_sen", "con_cai_nit", "minh_la_lop",
+            "hay_ra_de_qua_a", "mac_co_qua_hai_oi", "than_chua_ma_don", "ai_muon", "he_dieu_hanh_la", "ai_cung_khac",
+            "tuong_tuong", "be_hong_sai", "khong_vua_long", "boc_trung_sit_rit", "hen_lam_moi_xui_duoc_vay_a", "giam_suc_manh_con_tuong",
+            "phu_huynh_dung_xem", "xin_vinh_biet_cu", "bat_on_that_su", "nay_la_het_cuu", "het_cuu_thiet", "toi_cong_chuyen",
+            "toang_that_roi", "toi_roi_toi_roi", "goi_xong_lun", "xiu_ngang", "guc_nga", "bat_luc", "rot_nuoc_mat", "tien_dinh",
+            "nao_bao_tri", "overthinking_vai_chuong", "tram_cam_nhe", "khong_cam_xuc", "mieng_cuoi_long_khong", "hom_nay_toi_buon",
+            "dem_nay_noi_buon", "em_on_ap_luc", "mot_minh", "nan_nhan", "ai_cuu_tui", "song_gio_phu_doi_trai", "thuong_nguoi_khong_thuong",
+            "tu_da_tinh", "khong_du_tot", "hy_vong_that_vong", "het_duyen_het_thuong", "nguoi_vui_nho", "da_xem_chua_rep", "dung_im_lang",
+            "nho_thi_nho", "em_hong_doi", "doi_roi", "dung_choc_be", "dung_lam_be_quao", "xin_lui_duoc_chua", "biet_roi_kho", "hong_be_oi",
+            "khum_biet_nua", "cai_deo_ma", "cai_gi_vay_troi", "khong_the_tin_noi", "vl_m_oi", "ua_alo", "alo_gi_da", "ho", "noi_chuyen_met",
+            "het_noi_noi", "chan_bo_may_di", "lai_phai_lo", "tuyet_doi_khong_nghe", "khong_thay_khong_nghe", "noi_it_lo",
+            "nguoi_im_lang_gap_nguoi_hay_noi", "noi_het_bi_mat_thi_co_yeu_hong", "deadline_ruot", "doi_tru_deadline", "di_lam_vi_dam_me",
+            "ca_o_ran_doc", "nghien_cuu_khoa_hoc", "tien_dau_ma_tieu", "luc_nao_co_tien_thi_moi_di_a", "doc_so_tai_khoan",
+            "co_tien_lam_phien_thien_ha", "co_tien_noi_tiep", "doc_lap_tai_chinh", "cu_tu_tu_khoai_se_nhu", "kiem_tra_nhan_pham",
+            "ngay_moi_vui_ve", "matcha_latte", "mixue_time", "tien_mua_tra_sua", "an_com_chua", "dinner_time", "di_choi_khong",
+            "tuyet_voi_uong_nao", "shopping_time", "cinema_time", "tuyet_doi_dien_anh", "qua_la_dien_anh", "locket_time", "chilling_time",
+            "graduation_day", "hoi_chieu_troi_mua", "cam_lanh", "bau_troi_da_ly_huong", "night_vibes", "2am_thoughts", "sweet_dream",
+            "nhiem_vu_di_ngu", "cert_cutii", "cert_xinhgai", "cert_depchai", "cert_dangiu", "cert_xm_gaidep", "cert_xm_traidep",
+            "cert_bengoan", "cert_tuyenduong_cute", "cert_ngau_loi", "cert_gioi_giang", "cert_10_diem", "cert_cuc_pham",
+            "cert_ngoan_xinh_yeu", "cert_visual_dinh"
         ]),
         overlay_items: JSON.stringify([
             {
@@ -641,8 +670,7 @@ if (ua.includes("Locket")) {
                     { overlay_id: "caption:goodnight", source: "remote", daily_start_hour: 19.5, daily_end_hour: 24, caption: { background: { colors: ["#370C6F", "#575CD4"] }, icon: { data: "🌙", type: "emoji" }, max_lines: 1, text: "Goodnight", text_color: "#FFFFFFE6", type: "static_content" } },
                     { overlay_id: "caption:ngu_ngon", source: "remote", caption: { background: { colors: ["#3F51B5", "#1A237E"] }, icon: { data: "🌙", type: "emoji" }, max_lines: 1, text: "Ngủ ngon", text_color: "#FFFFFFE6", type: "static_content" } },
                     { overlay_id: "caption:sweet_dream", source: "remote", caption: { background: { colors: ["#A1C4FD", "#C2E9FB", "#E0F7FA"] }, icon: { data: "☁️", type: "emoji" }, max_lines: 1, text: "Sweet Dream 🧊", text_color: "#1A237EE6", type: "static_content" } },
-                    { overlay_id: "caption:nhiem_vu_di_ngu", source: "remote", caption: { background: { colors: ["#AEBDE0", "#C8D0EA", "#DCD1E9"] }, icon: { data: "🫡", type: "emoji" }, max_lines: 1, text: "nhiệm vụ hệ thống: đi ngủ", text_color: "#3F4B6A", type: "static_content" } },
-                    { overlay_id: "caption:kiem_tra_nhan_pham", source: "remote", caption: { background: { colors: ["#654EA3", "#EAAFC8"] }, icon: { data: "🎲", type: "emoji" }, max_lines: 1, text: "Kiểm tra nhân phẩm", text_color: "#FFFFFFE6", type: "static_content" } }
+                    { overlay_id: "caption:nhiem_vu_di_ngu", source: "remote", caption: { background: { colors: ["#AEBDE0", "#C8D0EA", "#DCD1E9"] }, icon: { data: "🫡", type: "emoji" }, max_lines: 1, text: "nhiệm vụ hệ thống: đi ngủ", text_color: "#3F4B6A", type: "static_content" } }
                 ]
             },
             {
