@@ -363,7 +363,7 @@ if (ua.includes("Locket")) {
     });
 
     // ============================================================
-    // 8. OVERLAY & CUSTOM CAPTIONS
+    // 8. OVERLAY & CUSTOM CAPTIONS (XÁC NHẬN ĐỦ 100% ID)
     // ============================================================
     Object.assign(obj.entries, {
         overlay_navigator_enabled: "true",
@@ -375,8 +375,8 @@ if (ua.includes("Locket")) {
         overlay_dynamic_captions: JSON.stringify([
             "standard", "poll", "color_palette", "review", "music", "location",
             "weather", "time", "streak", "star_sign", "party_time", "locket_count",
-            "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026", "namgioi_19_11",
-            "kaka", "cu", "tuat", "snake_vibes", "du_an_ma", "toi_nho_em", "em_nho_anhh", "nho_anh_phien", "i_love_you",
+            "halloween_2026", "autumn_2026", "christmas_eve_2026", "christmas_day_2026", "new_years_eve_2026", "new_years_day_2027", "new_years_day_2027_alternate", "namgioi_19_11",
+            "kaka", "cu", "tuat", "snake_vibes", "du_an_ma", "toi_nho_em", "miss_you", "em_nho_anhh", "nho_anh_phien", "i_love_you",
             "yeu_cuc_dang", "yeu_emmm", "yeu_anhhh", "baby_love", "muon_duoc_om", "cho_hun_mieng", "me_anh_me_ngu",
             "be_be_can_do", "iu_thi_noi", "iu_hong_thi_bao", "anh_thuong_em", "yeu_em_nhiem_vu", "crush_nhin", "ngoai_le_cua_em",
             "dang_ban_tuong_tu", "mac_bay_tinh_yeu", "minh_cuoi_nhau", "wedding_time", "dating_time", "cam_thay_hanh_phuc",
@@ -402,9 +402,9 @@ if (ua.includes("Locket")) {
             "nguoi_im_lang_gap_nguoi_hay_noi", "noi_het_bi_mat_thi_co_yeu_hong", "deadline_ruot", "doi_tru_deadline", "di_lam_vi_dam_me",
             "ca_o_ran_doc", "nghien_cuu_khoa_hoc", "tien_dau_ma_tieu", "luc_nao_co_tien_thi_moi_di_a", "doc_so_tai_khoan",
             "co_tien_lam_phien_thien_ha", "co_tien_noi_tiep", "doc_lap_tai_chinh", "cu_tu_tu_khoai_se_nhu", "kiem_tra_nhan_pham",
-            "ngay_moi_vui_ve", "matcha_latte", "mixue_time", "tien_mua_tra_sua", "an_com_chua", "dinner_time", "di_choi_khong",
+            "good_morning", "ngay_moi_vui_ve", "coffee_time", "matcha_latte", "mixue_time", "tien_mua_tra_sua", "an_com_chua", "dinner_time", "di_choi_khong",
             "tuyet_voi_uong_nao", "shopping_time", "cinema_time", "tuyet_doi_dien_anh", "qua_la_dien_anh", "locket_time", "chilling_time",
-            "graduation_day", "hoi_chieu_troi_mua", "cam_lanh", "bau_troi_da_ly_huong", "night_vibes", "2am_thoughts", "sweet_dream",
+            "graduation_day", "hoi_chieu_troi_mua", "rainy_day", "cam_lanh", "bau_troi_da_ly_huong", "night_vibes", "2am_thoughts", "goodnight", "ngu_ngon", "sweet_dream",
             "nhiem_vu_di_ngu", "cert_cutii", "cert_xinhgai", "cert_depchai", "cert_dangiu", "cert_xm_gaidep", "cert_xm_traidep",
             "cert_bengoan", "cert_tuyenduong_cute", "cert_ngau_loi", "cert_gioi_giang", "cert_10_diem", "cert_cuc_pham",
             "cert_ngoan_xinh_yeu", "cert_visual_dinh"
@@ -676,20 +676,20 @@ if (ua.includes("Locket")) {
             {
                 section: "🎨 Chứng nhận của Locket",
                 items: [
-                    { overlay_id: "caption:cert_cutii", source: "remote", caption: { background: { colors: ["#3BB0E7", "#2979FF"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn cutii", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_xinhgai", source: "remote", caption: { background: { colors: ["#FFC837", "#FF8008"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn xinh gái", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_depchai", source: "remote", caption: { background: { colors: ["#1E88E5", "#1565C0"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn đẹp trai", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_dangiu", source: "remote", caption: { background: { colors: ["#FF4081", "#E91E63"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn dangiu", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_xm_gaidep", source: "remote", caption: { background: { colors: ["#FF80AB", "#F50057"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác minh bạn là gái đẹp", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_xm_traidep", source: "remote", caption: { background: { colors: ["#42A5F5", "#1976D2"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác minh bạn là trai đẹp", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_bengoan", source: "remote", caption: { background: { colors: ["#F8BBD0", "#F48FB1"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác nhận bạn là bé ngoan", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_tuyenduong_cute", source: "remote", caption: { background: { colors: ["#E91E63", "#C2185B"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket tuyên dương bạn cute", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_ngau_loi", source: "remote", caption: { background: { colors: ["#37474F", "#212121"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn ngầu lòi", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_gioi_giang", source: "remote", caption: { background: { colors: ["#00C853", "#00897B"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket công nhận bạn giỏi giang", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_10_diem", source: "remote", caption: { background: { colors: ["#FFD700", "#FF8C00"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác minh bạn 10 điểm", text_color: "#000000E6", type: "review" } },
-                    { overlay_id: "caption:cert_cuc_pham", source: "remote", caption: { background: { colors: ["#AA00FF", "#6200EA"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Cấp chứng nhận siêu cực phẩm", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_ngoan_xinh_yeu", source: "remote", caption: { background: { colors: ["#FFB74D", "#FF9800"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Xác nhận ngoan xinh yêu số 1", text_color: "#FFFFFF", type: "review" } },
-                    { overlay_id: "caption:cert_visual_dinh", source: "remote", caption: { background: { colors: ["#00E5FF", "#00B0FF"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận Visual đỉnh chóp", text_color: "#000000E6", type: "review" } }
+                    { overlay_id: "caption:cert_cutii", source: "remote", caption: { background: { colors: ["#3BB0E7", "#2979FF"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn cutii", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_xinhgai", source: "remote", caption: { background: { colors: ["#FFC837", "#FF8008"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn xinh gái", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_depchai", source: "remote", caption: { background: { colors: ["#1E88E5", "#1565C0"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn đẹp trai", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_dangiu", source: "remote", caption: { background: { colors: ["#FF4081", "#E91E63"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn dangiu", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_xm_gaidep", source: "remote", caption: { background: { colors: ["#FF80AB", "#F50057"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác minh bạn là gái đẹp", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_xm_traidep", source: "remote", caption: { background: { colors: ["#42A5F5", "#1976D2"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác minh bạn là trai đẹp", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_bengoan", source: "remote", caption: { background: { colors: ["#F8BBD0", "#F48FB1"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác nhận bạn là bé ngoan", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_tuyenduong_cute", source: "remote", caption: { background: { colors: ["#E91E63", "#C2185B"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket tuyên dương bạn cute", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_ngau_loi", source: "remote", caption: { background: { colors: ["#37474F", "#212121"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận bạn ngầu lòi", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_gioi_giang", source: "remote", caption: { background: { colors: ["#00C853", "#00897B"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket công nhận bạn giỏi giang", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_10_diem", source: "remote", caption: { background: { colors: ["#FFD700", "#FF8C00"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Đã xác minh bạn 10 điểm", text_color: "#000000E6", type: "static_content" } },
+                    { overlay_id: "caption:cert_cuc_pham", source: "remote", caption: { background: { colors: ["#AA00FF", "#6200EA"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Cấp chứng nhận siêu cực phẩm", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_ngoan_xinh_yeu", source: "remote", caption: { background: { colors: ["#FFB74D", "#FF9800"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Xác nhận ngoan xinh yêu số 1", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cert_visual_dinh", source: "remote", caption: { background: { colors: ["#00E5FF", "#00B0FF"] }, icon: { data: "☑️", type: "emoji" }, max_lines: 1, text: "Locket xác nhận Visual đỉnh chóp", text_color: "#000000E6", type: "static_content" } }
                 ]
             }
         ])
