@@ -135,30 +135,18 @@ if (ua.includes("Locket")) {
             allows_custom_filters: true,
             show_filter_button: true,
             sheet_enabled: true,
-            open_sheet_immediately: true,
+            open_sheet_immediately: false,
             sheet_filters: [
-                {
-                    title: { en: "🎮 Anime & Gaming (free không giới hạn)" },
-                    filter_ids: ["minecraft", "cyberpunk_neon", "anime_japan", "ghibli"]
-                },
-                {
-                    title: { en: "🔥 Sticker & Khung Ảnh (free không giới hạn)" },
-                    filter_ids: ["photobooth", "ca_cute", "locket_cua_to", "halloween", "ghep_doi_ngau_nhien", "chup_cung_bigbang", "chung_nhan_dep_gai"]
-                },
-                {
-                    title: { en: "📹 Điện Ảnh & Vintage (free không giới hạn)" },
-                    filter_ids: ["thap_nien_90s", "anh_polaroid", "truyen_tranh_pop", "hoat_hinh_3d"]
-                },
-                {
-                    title: { en: "✨ Xu Hướng & Đặc Biệt (free không giới hạn)" },
-                    filter_ids: ["stranger_things", "ghep_doi_ngau_nhien", "survivor_island", "dinh_gio_hu"]
-                }
+                { title: { en: "🔥 Hot & Trendy" }, filter_ids: ["okay_wig", "influencer", "looks_maxxing", "happy_birthday", "cutesy"] },
+                { title: { en: "🎨 Looks & Style" }, filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "braces"] },
+                { title: { en: "🎉 Celebrate & Cute" }, filter_ids: ["slimed", "princess", "disco_lights", "cash_money", "sticker_face", "flower_crown", "love_bug"] },
+                { title: { en: "🎭 Costumes & Fun" }, filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown", "toothless", "bye_brows"] }
             ],
             picker_filters: [
-                "minecraft", "cyberpunk_neon", "anime_japan", "ghibli",
-                "photobooth", "ca_cute", "locket_cua_to", "halloween", "ghep_doi_ngau_nhien", "chup_cung_bigbang", "chung_nhan_dep_gai",
-                "thap_nien_90s", "anh_polaroid", "truyen_tranh_pop", "hoat_hinh_3d",
-                "stranger_things", "survivor_island", "dinh_gio_hu"
+                "okay_wig", "influencer", "looks_maxxing", "happy_birthday", "cutesy",
+                "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "braces",
+                "slimed", "princess", "disco_lights", "cash_money", "sticker_face", "flower_crown", "love_bug",
+                "wedding", "cowboy_cowgirl", "giraffe", "clown", "toothless", "bye_brows"
             ]
         }),
         camera_roll_preview_enabled: "true",
