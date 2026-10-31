@@ -363,7 +363,7 @@ if (ua.includes("Locket")) {
     });
 
     // ============================================================
-    // 8. OVERLAY & CUSTOM CAPTIONS (XÁC NHẬN ĐỦ 100% ID)
+    // 8. OVERLAY & CUSTOM CAPTIONS (ĐÃ ĐĂNG KÝ ĐỦ 100% TẤT CẢ ID)
     // ============================================================
     Object.assign(obj.entries, {
         overlay_navigator_enabled: "true",
