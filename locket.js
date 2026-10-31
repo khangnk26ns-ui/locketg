@@ -1,95 +1,81 @@
 // ============================================================
-// Locket Remote Config Rewrite
-// Endpoint: firebaseremoteconfig.googleapis.com
+// LOCKET GOLD & CUSTOM CAPTION CONFIGURATION (FULL FINAL)
+// ============================================================
 
-var ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
-var obj = JSON.parse($response.body);
-
-if (ua.includes("Locket")) {
-    obj.Attention = "Chúc mừng bạn!";
-    obj.entries = obj.entries || {};
+if ($response && $response.body) {
+    let obj = JSON.parse($response.body);
+    
+    if (!obj.entries) {
+        obj.entries = {};
+    }
 
     // ============================================================
-    // 1. CẤU HÌNH GOLD, FEATURE GATES & PAYWALL
+    // 1. FEATURE FLAGS & GOLD OVERRIDES (FORCE ENABLE 100%)
     // ============================================================
     Object.assign(obj.entries, {
-        feature_gates: JSON.stringify({
-            app_icon_picker: "enabled",
-            camera_roll: "enabled",
-            camera_theme: "enabled",
-            locket_views: "enabled",
-            long_captions: "enabled",
-            longer_video: "enabled",
-            unlimited_friends: "enabled",
-            priority_support: "enabled",
-            profile_badge: "enabled",
-            remove_ads: "enabled",
-            video: "enabled",
-            custom_widget_frames: "enabled",
-            streak_recovery: "enabled"
-        }),
-        upsell_features: JSON.stringify({
-            app_icon_picker: true,
-            camera_roll: true,
-            camera_theme: true,
-            locket_views: true,
-            remove_ads: true,
-            custom_widget_frames: true
-        }),
-        paywall_presentation_config: JSON.stringify({
-            uid: "paywall_testflight",
-            onboarding: false,
-            after_sent_moment: false,
-            on_foreground: false,
-            interval: 2592000,
-            profile_banner: true
-        }),
-        feature_discovery_popup_config: JSON.stringify({
-            tag: "LOCKET GOLD ",
-            tag_gradient: true,
-            tag_style: "gold_gradient",
-            title: "LÊN GOLD VIP RỒI CỐT 💛",
-            feature_set: [
-                {
-                    title: "kaka co dep trai khong 🗿",
-                    body: "Locket Gold by kairis 💛",
-                    imageURL: "https://i.ibb.co/WWWkJtzj/lengold.png"
-                }
-            ],
-            primary_button_title: "Xong",
-            campaign: "locket_gold_welcome_v3",
-            start_at: "2020-01-01T00:00:00",
-            end_at: "2099-12-31T23:59:59",
-            use_local_time_zone: true
-        }),
-        android_subscribe_gold_button_enabled: "false",
-        profile_badge_visible: "true",
-        lunar_new_year_app_icon_enabled: "true"
+        show_gold_badge: "true",
+        gold_badge_enabled: "true",
+        is_gold_subscriber: "true",
+        has_gold: "true",
+        gold_enabled: "true",
+        gold_subscriber: "true",
+        gold_subscription_active: "true",
+        gold_user: "true",
+        subscription_status: "active",
+        subscription_type: "gold",
+        
+        can_show_gold_badge: "true",
+        force_gold_badge: "true",
+        enable_gold_features: "true",
+        gold_badge_visible: "true",
+        
+        gold_camera_enabled: "true",
+        gold_post_enabled: "true",
+        gold_history_enabled: "true",
+        
+        analytics_enabled: "false",
+        crashlytics_enabled: "false"
     });
 
     // ============================================================
-    // 2. CHẶN QUẢNG CÁO & TẮT TRACKING (SENTRY)
+    // 2. OVERLAY DYNAMIC CAPTIONS (CHỨNG NHẬN 👑 ... ✨)
     // ============================================================
-    Object.assign(obj.entries, {
-        history_ads_mode: "off",
-        history_ads_prefetch_count: "0",
-        history_ads_prefetch_immediate: "false",
-        history_ads_prefetch_reroute: "false",
-        history_ads_dynamic_insertion: "false",
-        history_ads_refresh_prefetch_on_foreground: "false",
-        history_ads_floor_price: "0",
-        history_ads_floor_price_att: "0",
-        history_ad_log_displayed_on_background: "false",
-        history_ads_debug_menu: "false",
-        sentry_sample_rate: "0",
-        sentry_network_tracing: "false",
-        sentry_performance_tracking: "false",
-        sentry_trace_sample_rate: "0",
-        sentry_profiles_sample_rate: "0"
+    let certItems = [
+        { overlay_id: "caption:cert_cutii", source: "remote", caption: { background: { colors: ["#FF80AB", "#FF4081"] }, max_lines: 1, text: "👑 Locket xác nhận bạn cutii ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_xinhgai", source: "remote", caption: { background: { colors: ["#FFB7B2", "#FF9AA2"] }, max_lines: 1, text: "👑 Locket xác nhận bạn xinh gái ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_depchai", source: "remote", caption: { background: { colors: ["#1E88E5", "#1565C0"] }, max_lines: 1, text: "👑 Locket xác nhận bạn đẹp trai ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_dangiu", source: "remote", caption: { background: { colors: ["#FF9A9E", "#FECFEF"] }, max_lines: 1, text: "👑 Locket xác nhận bạn dangiu ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_xm_gaidep", source: "remote", caption: { background: { colors: ["#F3A18F", "#EC2F4B"] }, max_lines: 1, text: "👑 Đã xác minh bạn là gái đẹp ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_xm_traidep", source: "remote", caption: { background: { colors: ["#42A5F5", "#1976D2"] }, max_lines: 1, text: "👑 Đã xác minh bạn là trai đẹp ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_bengoan", source: "remote", caption: { background: { colors: ["#F8BBD0", "#F48FB1"] }, max_lines: 1, text: "👑 Đã xác nhận bạn là bé ngoan ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_tuyenduong_cute", source: "remote", caption: { background: { colors: ["#E91E63", "#C2185B"] }, max_lines: 1, text: "👑 Locket tuyên dương bạn cute ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_ngau_loi", source: "remote", caption: { background: { colors: ["#37474F", "#212121"] }, max_lines: 1, text: "👑 Locket xác nhận bạn ngầu lòi ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_gioi_giang", source: "remote", caption: { background: { colors: ["#00C853", "#00897B"] }, max_lines: 1, text: "👑 Locket công nhận bạn giỏi giang ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_10_diem", source: "remote", caption: { background: { colors: ["#FFD700", "#FF8C00"] }, max_lines: 1, text: "👑 Đã xác minh bạn 10 điểm ✨", text_color: "#000000E6", type: "static_content" } },
+        { overlay_id: "caption:cert_cuc_pham", source: "remote", caption: { background: { colors: ["#AA00FF", "#6200EA"] }, max_lines: 1, text: "👑 Cấp chứng nhận siêu cực phẩm ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_ngoan_xinh_yeu", source: "remote", caption: { background: { colors: ["#FFB74D", "#FF9800"] }, max_lines: 1, text: "👑 Xác nhận ngoan xinh yêu số 1 ✨", text_color: "#FFFFFF", type: "static_content" } },
+        { overlay_id: "caption:cert_visual_dinh", source: "remote", caption: { background: { colors: ["#00E5FF", "#00B0FF"] }, max_lines: 1, text: "👑 Locket xác nhận Visual đỉnh chóp ✨", text_color: "#000000E6", type: "static_content" } }
+    ];
+
+    obj.entries.overlay_dynamic_captions = JSON.stringify({
+        sections: [
+            {
+                section: "🎨 Chứng nhận của Locket",
+                items: certItems
+            }
+        ]
     });
 
+    obj.entries.overlay_items = JSON.stringify(
+        certItems.map(item => ({
+            id: item.overlay_id,
+            source: item.source,
+            caption: item.caption
+        }))
+    );
+
     // ============================================================
-    // 3. CAMERA, VIDEO, FILTERS & UPLOAD QUALITY
+    // 3. CAMERA, VIDEO & UPLOAD QUALITY (OPTIMIZED)
     // ============================================================
     Object.assign(obj.entries, {
         camera: JSON.stringify({
@@ -131,24 +117,6 @@ if (ua.includes("Locket")) {
             catch_up: true,
             widget_looping_mode: "never"
         }),
-        camera_filter_config: JSON.stringify({
-            allows_custom_filters: true,
-            show_filter_button: true,
-            sheet_enabled: true,
-            open_sheet_immediately: false,
-            sheet_filters: [
-                { title: { en: "🔥 Hot & Trendy" }, filter_ids: ["okay_wig", "influencer", "looks_maxxing", "happy_birthday", "cutesy"] },
-                { title: { en: "🎨 Looks & Style" }, filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "braces"] },
-                { title: { en: "🎉 Celebrate & Cute" }, filter_ids: ["slimed", "princess", "disco_lights", "cash_money", "sticker_face", "flower_crown", "love_bug"] },
-                { title: { en: "🎭 Costumes & Fun" }, filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown", "toothless", "bye_brows"] }
-            ],
-            picker_filters: [
-                "okay_wig", "influencer", "looks_maxxing", "happy_birthday", "cutesy",
-                "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "braces",
-                "slimed", "princess", "disco_lights", "cash_money", "sticker_face", "flower_crown", "love_bug",
-                "wedding", "cowboy_cowgirl", "giraffe", "clown", "toothless", "bye_brows"
-            ]
-        }),
         camera_roll_preview_enabled: "true",
         camera_roll_video_enabled: "true",
         camera_roll_video_upload_enabled: "true",
@@ -175,6 +143,11 @@ if (ua.includes("Locket")) {
         upload_thumbnail_image_quality: "0.8",
         upload_thumbnail_image_size: "360"
     });
+
+    $done({ body: JSON.stringify(obj) });
+} else {
+    $done({});
+}
     // ============================================================
     // 4. BẠN BÈ, GIỚI HẠN & ĐỀ XUẤT KẾT BẠN
     // ============================================================
