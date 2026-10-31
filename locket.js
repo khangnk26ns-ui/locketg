@@ -375,7 +375,10 @@ if (ua.includes("Locket")) {
         overlay_dynamic_captions: JSON.stringify([
             "standard", "poll", "color_palette", "review", "music", "location",
             "weather", "time", "streak", "star_sign", "party_time", "locket_count",
-            "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026", "namgioi_19/11"
+            "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026", "namgioi_19/11",
+            "cert_cutii", "cert_xinhgai", "cert_depchai", "cert_dangiu", "cert_xm_gaidep", 
+            "cert_xm_traidep", "cert_bengoan", "cert_tuyenduong_cute", "cert_ngau_loi", 
+            "cert_gioi_giang", "cert_10_diem", "cert_cuc_pham", "cert_ngoan_xinh_yeu", "cert_visual_dinh"
         ]),
         overlay_items: JSON.stringify([
             {
@@ -403,7 +406,8 @@ if (ua.includes("Locket")) {
                     { overlay_id: "caption:christmas_day_2026", source: "remote", caption: { background: { colors: ["#E53935", "#A81818"] }, icon: { data: "🎄", type: "emoji" }, max_lines: 1, text: "Giáng sinh an lành", localized_text: { en: "Giáng sinh an lành", vn: "Giáng sinh an lành" }, text_color: "#FFFFFF", type: "static_content" } },
                     { overlay_id: "caption:new_years_eve_2026", source: "remote", caption: { background: { colors: ["#FFC64B", "#FFEDBF"] }, icon: { data: "🥂", type: "emoji" }, max_lines: 1, text: "Xin chào 2027!", localized_text: { en: "Xin chào 2027!", vn: "Xin chào 2027!" }, text_color: "#643F00", type: "static_content" } },
                     { overlay_id: "caption:new_years_day_2027", source: "remote", caption: { background: { colors: ["#3B00EC", "#823FFF"] }, icon: { data: "💫", type: "emoji" }, max_lines: 1, text: "Xin chào 2027!", localized_text: { en: "Xin chào 2027!", vn: "Xin chào 2027!" }, text_color: "#FFFFFF", type: "static_content" } },
-                    { overlay_id: "caption:new_years_day_2027_alternate", source: "remote", caption: { background: { colors: ["#FF0062", "#FF783F"] }, max_lines: 1, text: "2027", text_color: "#FFFFFF", type: "static_content" } }
+                    { overlay_id: "caption:new_years_day_2027_alternate", source: "remote", caption: { background: { colors: ["#FF0062", "#FF783F"] }, max_lines: 1, text: "2027", text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:namgioi_19/11", source: "remote", caption: { background: { colors: ["#1E3C72", "#2A5298"] }, icon: { data: "👔", type: "emoji" }, max_lines: 1, text: "Chúc mừng Ngày Quốc tế Nam giới 19/11", localized_text: { en: "Happy International Men's Day", vn: "Chúc mừng Ngày Quốc tế Nam giới 19/11" }, text_color: "#FFFFFF", type: "static_content" } }
                 ]
             },
             {
