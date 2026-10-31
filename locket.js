@@ -137,21 +137,28 @@ if (ua.includes("Locket")) {
             sheet_enabled: true,
             open_sheet_immediately: true,
             sheet_filters: [
-                { title: { en: "Goofy" }, filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows"] },
-                { title: { en: "Looks" }, filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows"] },
-                { title: { en: "Celebrate" }, filter_ids: ["slimed", "princess", "disco_lights", "cash_money", "happy_birthday"] },
-                { title: { en: "Cute" }, filter_ids: ["cutesy", "sticker_face", "flower_crown", "love_bug"] },
-                { title: { en: "Costumes" }, filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown"] },
-                { title: { en: "Holidays" }, filter_ids: ["easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"] }
+                {
+                    title: { en: "🎮 Anime & Gaming (free không giới hạn)" },
+                    filter_ids: ["minecraft", "cyberpunk_neon", "anime_japan", "ghibli"]
+                },
+                {
+                    title: { en: "🔥 Sticker & Khung Ảnh (free không giới hạn)" },
+                    filter_ids: ["photobooth", "ca_cute", "locket_cua_to", "halloween", "ghep_doi_ngau_nhien", "chup_cung_bigbang", "chung_nhan_dep_gai"]
+                },
+                {
+                    title: { en: "📹 Điện Ảnh & Vintage (free không giới hạn)" },
+                    filter_ids: ["thap_nien_90s", "anh_polaroid", "truyen_tranh_pop", "hoat_hinh_3d"]
+                },
+                {
+                    title: { en: "✨ Xu Hướng & Đặc Biệt (free không giới hạn)" },
+                    filter_ids: ["stranger_things", "ghep_doi_ngau_nhien", "survivor_island", "dinh_gio_hu"]
+                }
             ],
             picker_filters: [
-                "okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows",
-                "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns",
-                "tatted", "mohawk", "braces", "slimed", "princess",
-                "disco_lights", "cash_money", "happy_birthday", "cutesy", "sticker_face",
-                "flower_crown", "love_bug", "wedding", "cowboy_cowgirl", "giraffe",
-                "clown", "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun",
-                "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"
+                "minecraft", "cyberpunk_neon", "anime_japan", "ghibli",
+                "photobooth", "ca_cute", "locket_cua_to", "halloween", "ghep_doi_ngau_nhien", "chup_cung_bigbang", "chung_nhan_dep_gai",
+                "thap_nien_90s", "anh_polaroid", "truyen_tranh_pop", "hoat_hinh_3d",
+                "stranger_things", "survivor_island", "dinh_gio_hu"
             ]
         }),
         camera_roll_preview_enabled: "true",
@@ -180,7 +187,6 @@ if (ua.includes("Locket")) {
         upload_thumbnail_image_quality: "0.8",
         upload_thumbnail_image_size: "360"
     });
-
     // ============================================================
     // 4. BẠN BÈ, GIỚI HẠN & ĐỀ XUẤT KẾT BẠN
     // ============================================================
