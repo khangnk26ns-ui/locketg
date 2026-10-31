@@ -639,7 +639,7 @@ if (ua.includes("Locket")) {
                     { overlay_id: "caption:sweet_dream", source: "remote", caption: { background: { colors: ["#A1C4FD", "#C2E9FB", "#E0F7FA"] }, icon: { data: "☁️", type: "emoji" }, max_lines: 1, text: "Sweet Dream 🧊", text_color: "#1A237EE6", type: "static_content" } },
                     { overlay_id: "caption:nhiem_vu_di_ngu", source: "remote", caption: { background: { colors: ["#AEBDE0", "#C8D0EA", "#DCD1E9"] }, icon: { data: "🫡", type: "emoji" }, max_lines: 1, text: "nhiệm vụ hệ thống: đi ngủ", text_color: "#3F4B6A", type: "static_content" } }
                 ]
-            }
+            },
             {
             section: "🎨 Chứng nhận của Locket",
             items: [
