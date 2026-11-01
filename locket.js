@@ -45,20 +45,20 @@ if (ua.includes("Locket")) {
             profile_banner: true
         }),
         feature_discovery_popup_config: JSON.stringify({
-            tag: "LOCKET GOLD ",
+            tag: "LOCKET GOLD LỎ ",
             tag_gradient: true,
             tag_style: "gold_gradient",
             title: "LÊN GOLD VIP RỒI CỐT 💛",
             feature_set: [
                 {
-                    title: "kaka co dep trai khong 🗿",
+                    title: "Kaka co dep trai khong 🗿",
                     body: "Locket Gold by kairis 💛",
                     imageURL: "https://i.ibb.co/WWWkJtzj/lengold.png"
                 }
             ],
             primary_button_title: "Xong",
             campaign: "locket_gold_welcome_v3",
-            start_at: "2020-01-01T00:00:00",
+            start_at: "2008-01-01T00:00:00",
             end_at: "2099-12-31T23:59:59",
             use_local_time_zone: true
         }),
